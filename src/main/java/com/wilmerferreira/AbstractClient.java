@@ -1,4 +1,9 @@
 package com.wilmerferreira;
 
-public class AbstractClient {
+public abstract class AbstractClient {
+    protected String subscriptionKey;
+
+    public AbstractClient(String subscriptionKey) {
+        this.subscriptionKey = subscriptionKey;
+    }
 }

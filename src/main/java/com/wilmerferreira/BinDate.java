@@ -1,4 +1,6 @@
 package com.wilmerferreira;
 
-public record BinDate() {
+import java.util.Date;
+
+public record BinDate(String type, Date date) {
 }

@@ -1,4 +1,9 @@
 package com.wilmerferreira;
 
-public class BaseClient {
+public abstract class BaseClient {
+    protected String subscriptionKey;
+
+    public BaseClient(String subscriptionKey) {
+        this.subscriptionKey = subscriptionKey;
+    }
 }
