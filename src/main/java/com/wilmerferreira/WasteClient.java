@@ -31,13 +31,13 @@ public class WasteClient extends AbstractClient {
 
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
-            if (response.statusCode()== 200){
+            if (response.statusCode() == 200) {// TODO: Refactor this logic and handle other status codes and errors
                 ObjectMapper mapper = new ObjectMapper();
 
                 return mapper.readValue(
                         response.body(),
-                        new TypeReference<>() {}
-                );
+                        new TypeReference<>() {
+                        });
             }
 
             return new BinDate[0];
