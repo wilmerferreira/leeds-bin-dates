@@ -1,4 +1,4 @@
-# bin-dates
+# leeds-bin-dates
 
 A java client that fetches bin dates from the Leeds city council (UK).
 
